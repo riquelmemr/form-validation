@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: rgba(77, 16, 148, 0.979);
+    --primary-color-dark: rgba(56, 13, 126, 0.795);
+    --color-white: rgb(255, 255, 255);
+    --color-grey: rgb(255, 255, 255);
+    --color-clean: rgb(192, 151, 219);
+    --color-white-clean: rgba(255, 255, 255, 0.87);
+}
+
+* {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+li {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+table td, table th {
+    text-align: left;
+    padding-right: 110px;
+    padding-bottom: 3px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+form input {
+    font-size: 15px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 6px;
+    border: none;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background: var(--color-white);
+    color:  var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+
+form button:hover {
+    background: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    color: var(--color-white);
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: var(--primary-color-dark);
+    padding: 20px;
+    border: 2px solid var(--color-white-clean);
+    border-radius: 8px;
+    color: var(--color-white-clean);
+    box-shadow: 0 0 10em var(--color-clean);
+}
+
+.text-error {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(226, 6, 6);
+}
